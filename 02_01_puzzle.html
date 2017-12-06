@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script language="javascript" type="text/javascript" src="lodash.js"></script>
+        <script language="javascript" type="text/javascript" src="util.js"></script>
+        <script language="javascript" type="text/javascript" src="02_01_puzzle.js"></script>
+        <script language="javascript" type="text/javascript">
+        var run = function() {
+            var result = document.getElementById('result');
+            var inputValue = document.getElementById('input').value;
+            result.innerHTML = puzzleFunction(inputValue);
+        };
+        </script>
+    </head>
+    <body>
+        <label>input </label><input type="text" id="input">
+        <button type="button" onclick="run()">Run</button>
+        <div>
+            Result: <span id="result"></span>
+        </div>
+    </body>
+</html>
